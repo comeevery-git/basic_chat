@@ -40,4 +40,15 @@ public class ChatRepositoryExtendedImpl implements ChatRepositoryExtended {
 			.fetch();
 	}
 
+	@Override
+	public List<String> findAllUsers() {
+		QChatMessage chatMessage = QChatMessage.chatMessage;
+
+		return queryFactory
+			.select(chatMessage.senderId)
+			.from(chatMessage)
+			.distinct()
+			.fetch();
+	}
+
 }

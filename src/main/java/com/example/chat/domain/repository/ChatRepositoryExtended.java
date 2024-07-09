@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface ChatRepositoryExtended {
 	List<ChatMessage> findMessagesBetweenUsers(String senderId, String recipientId);
+	List<String> findAllUsers();
 
 }
 
