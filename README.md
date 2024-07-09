@@ -22,4 +22,7 @@
 3. 채팅 화면 구현
 4. 채팅 내역 캐싱
 
-**Server Run, Demo: http://localhost:8080
+### Server Run, Demo: http://localhost:8080
+
+- 송신자ID 입력
+- 수신자ID 채팅방 선택 후 채팅 시작
