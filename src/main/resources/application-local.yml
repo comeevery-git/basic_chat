@@ -23,6 +23,8 @@ spring:
   mvc:
     static-path-pattern: /**
   thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
     cache: false
 
 server:
@@ -30,8 +32,8 @@ server:
 
 logging:
   level:
-    root: DEBUG
-    com.example.chat: DEBUG
+    root: INFO
+    com.example.chat: INFO
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
